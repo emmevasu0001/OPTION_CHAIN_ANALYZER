@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Display</title>
+</head>
+<body>
+    <h1>Data Display</h1>
+    
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+        {% for row in data %}
+        <tr>
+            <td>{{row}}</td>
+            {% comment %} <td>{{ row.Name }}</td>
+            <td>{{ row.Age }}</td>
+            <td>{{ row.City }}</td> {% endcomment %}
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

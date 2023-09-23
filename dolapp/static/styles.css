@@ -1,0 +1,96 @@
+/* static/styles.css */
+/* Add your classical styles here */
+body {
+    font-family: Times New Roman, serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: left;
+}
+
+form {
+    text-align: left;
+    margin-top: 20px;
+}
+
+/* Style for the image */
+img {
+    width: 300px;
+    height: 200px;
+    border: 2px solid #333;
+    display: block;
+    margin: 0 auto;
+}
+
+h3 {
+    text-align: left;
+}
+/* static/styles.css */
+/* ... other styles ... */
+
+/* Header styles */
+/* static/styles.css */
+/* ... other styles ... */
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.user-options a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+/* 3D effect for the image */
+.image-container {
+    perspective: 1000px;
+    position: relative;
+}
+
+img {
+    width: 300px;
+    height: 150px;
+    border: 2px solid #333;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.5s;
+}
+
+.image-container:hover img {
+    transform: rotateY(20deg);
+}
+

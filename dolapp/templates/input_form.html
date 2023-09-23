@@ -1,0 +1,28 @@
+<!-- templates/tasks/my_template.html -->
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NSE Option Analyzer</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>NSE Option Analyzer</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form method="post" action="{% url 'input_form' %}">
+        {% csrf_token %}
+        <input type="image" src="{% static 'analizer.png' %}" alt="Image" width="300" height="150" alt="Submit" />
+        <h3>Please click the image to see results</h3>
+        <h4> Created By Emme Vasu.It is under developing</h4>
+    </form>
+</body>
+</html>
